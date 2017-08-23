@@ -6,7 +6,14 @@ RUN apt-get install -y \
     antiword \
     build-essential \
     nodejs \
+    pocketsphinx \
     poppler-utils \
+    pstotext \
+    python \
+    python-dev \
+    python-pip \
+    python-virtualenv \
+    sox \
     tesseract-ocr-all \
     unrtf
 RUN apt-get clean
