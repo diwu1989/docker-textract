@@ -22,6 +22,7 @@ RUN apt-get install -y \
 
 RUN apt-get install -y \
     antiword \
+    libsox-fmt-all \
     pocketsphinx \
     poppler-utils \
     pstotext \
