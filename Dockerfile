@@ -1,6 +1,7 @@
 FROM ubuntu:16.04
-RUN apt-get update
-RUN apt-get install -y \
+RUN apt-get update \
+    
+    && apt-get install -y \
     build-essential \
     curl \
     dstat \
@@ -8,19 +9,19 @@ RUN apt-get install -y \
     libpulse-dev \
     nano \
     swig \
-    tmux
+    tmux \
 
-RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
+    && curl -sL https://deb.nodesource.com/setup_8.x | bash - \
 
-RUN apt-get install -y nodejs
+    && apt-get install -y nodejs \
 
-RUN apt-get install -y \
+    && apt-get install -y \
     python \
     python-dev \
     python-pip \
-    python-virtualenv
+    python-virtualenv \
 
-RUN apt-get install -y \
+    && apt-get install -y \
     antiword \
     libsox-fmt-all \
     pocketsphinx \
@@ -28,7 +29,7 @@ RUN apt-get install -y \
     pstotext \
     sox \
     tesseract-ocr-all \
-    unrtf
+    unrtf \
 
-RUN apt-get clean
-RUN rm -rf /var/lib/apt/lists/*
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
