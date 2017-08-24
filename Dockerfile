@@ -17,9 +17,7 @@ RUN apt-get update \
     nodejs \
     python \
     python-dev \
-    python-pip \
-    python-virtualenv \
-
+    
     antiword \
     libsox-fmt-all \
     pocketsphinx \
@@ -28,6 +26,7 @@ RUN apt-get update \
     sox \
     tesseract-ocr-all \
     unrtf \
-
+    
+    && curl -sL https://bootstrap.pypa.io/get-pip.py | python \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
