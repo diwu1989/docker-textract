@@ -13,15 +13,13 @@ RUN apt-get update \
 
     && curl -sL https://deb.nodesource.com/setup_8.x | bash - \
 
-    && apt-get install -y nodejs \
-
-    && apt-get install -y \
+    && apt-get install -y
+    nodejs \
     python \
     python-dev \
     python-pip \
     python-virtualenv \
 
-    && apt-get install -y \
     antiword \
     libsox-fmt-all \
     pocketsphinx \
