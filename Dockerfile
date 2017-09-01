@@ -10,6 +10,7 @@ RUN apt-get update \
     nano \
     swig \
     tmux \
+    wget \
 
     && curl -sL https://deb.nodesource.com/setup_8.x | bash - \
 
@@ -21,12 +22,9 @@ RUN apt-get update \
     ruby \
 
     antiword \
-    libsox-fmt-all \
     pocketsphinx \
     poppler-utils \
     pstotext \
-    sox \
-    tesseract-ocr-all \
     unrtf \
 
     && curl -sL https://bootstrap.pypa.io/get-pip.py | python \
